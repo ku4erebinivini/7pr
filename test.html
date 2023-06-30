@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head><title>Сайт</title>
+    <meta charset="utf-8">
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">My first Bootstrap Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Мої хобі</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#priroda">Мої любі друзі</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Виникли запитання?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mycontact">Мої контакти</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="Ya">Я ілля Кучеренко</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/iam" class="img-fluid img-thumbnail" style="max-width: 400px;">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <center><h2 class="mb-4">Мої хобі</h2></center>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/football.jpeg" class="card-img-top" alt="Зображення 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Грав у футбол</h5>
+                        <p class="card-text">Та й досить непогано...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/lumore.png" class="card-img-top" alt="Зображення 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Люблю каву</h5>
+                        <p class="card-text">Є багато місць де це можна робити,але моє улюблене на фото</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/kispkhnu.jpg" class="card-img-top" alt="Зображення 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Навчаюся на кафедрі комп`ютерної інженерії та програмування</h5>
+                        <p class="card-text">Класні викладачі, які пояснюють майже увесь матеріал чудово і доступно</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="priroda" class="py-5 bg-light">
+    <div class="container">
+        <center><h2 class="mb-4">Мої любі друзі</h2></center>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/victor.jpg" class="card-img-top" alt="Зображення 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ванечка</h5>
+                        <p class="card-text">Другий дотер<br>Обожнює грати на міду за тінкера та перемагати майже за будь яких умов<p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/Illya.jpg" class="card-img-top" alt="Зображення 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ілля Крамар</h5>
+                        <p class="card-text"><br>Вчиться у самому крутому університеті Львову</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/Karim.jpg" class="card-img-top" alt="Зображення 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Карім</h5>
+                        <p class="card-text">Кучерявий хлопчина<br>ТРО Германії</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <center><h2 class="mb-4">Ваші контакти</h2></center>
+        <p>Якщо буду потрібен:</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Ваше прізвище</label>
+                <input type="text" class="form-control" id="name" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="email">Ваша пошта</label>
+                <input type="email" class="form-control" id="email" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="question">Ваші думки про мене</label>
+                <textarea class="form-control" id="question" rows="3" placeholder=""></textarea>
+            </div>
+            <div class="form-group">
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Надіслати</button>
+        </form>
+    </div>
+</section>
+
+
+<section id="mycontact" class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Контакти</h2>
+        <p>Instagram: <a href="https://www.instagram.com/vladudarnik/">@nevercanrelax</a></p>
+        <p>Телефон: 0971618515</p>
+
+    </div>
+</section>
+
+<footer class="py-3 bg-dark text-light text-left">
+    <div class="container">
+        &copy; 2023 Ілля Кучеренко
+    </div>
+</footer>
+
+<!-- Підключення Bootstrap JS та скриптів -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
